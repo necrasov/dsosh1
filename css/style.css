@@ -12724,12 +12724,12 @@ transition: all 0.5s linear;
   margin-bottom:0px;
 }
 
-.our-team-2 .icons{
+.our-team-2 .descripton{
 	position:absolute;
 	top:-100%;
 }
 
-.our-team-2:hover .icons{
+.our-team-2:hover .descripton{
 	left:50%;
 	top:50%;
 	width: 100%;
@@ -12737,7 +12737,7 @@ transition: all 0.5s linear;
     -webkit-transform:translate(-50%,-50%);
 	transform:translate(-50%,-50%);
 }
-.our-team-2:hover .icons a i {
+.our-team-2:hover .descripton a i {
 	-webkit-animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -12777,7 +12777,7 @@ transition: all 0.5s linear;
 
 
 
-.our-team-2 .icons i {
+.our-team-2 .descripton i {
 	color: #000;
 	display: inline-block;
 	font-size: 14px;
@@ -12789,12 +12789,12 @@ transition: all 0.5s linear;
 	border-radius:50%;
 }
 
-.our-team-2 .icons i:hover {
+.our-team-2 .descripton i:hover {
   color: #fff;
   background-color: #222;
 }
 
-.our-team-2 .icons i a {
+.our-team-2 .descripton i a {
   text-decoration: none;
 }
 @media only screen and (max-width:991px){
