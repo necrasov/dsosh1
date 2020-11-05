@@ -663,7 +663,7 @@ function sticky_sidebar(){
 //________ Counter Up  function by = counterup.min.js ========== //		
 function counter_up(){		
 	jQuery('.counter').counterUp({
-		delay: 10,
+		delay: 5,
 		time: 2000
 	});
 
