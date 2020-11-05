@@ -12424,6 +12424,12 @@ display:block;
     padding: 30px;
     max-width: 360px;
 }
+@media (max-width: 420px) {
+	.bell-sx-info {
+		left: 30px;
+		width: 275px;
+	}
+}
 .bell-open {
 	display: block;
 }
