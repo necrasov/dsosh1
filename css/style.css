@@ -12738,7 +12738,7 @@ transition: all 0.5s linear;
 	transform:translate(-50%,-50%);
 	background: #fff;;
     padding: 5px 10px;
-    margin: 0 2px;
+    margin: 0 20px;
     border: 1px solid #ebebeb;
     max-width: 220px;
 }
