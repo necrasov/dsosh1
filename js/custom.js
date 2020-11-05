@@ -28,7 +28,7 @@ function site_search(){
 //________Bell container Show Hide function by = custom.js________//	
 
 function bell_btn(){		
-		jQuery('.bell-link').on('click', function(event) {
+		jQuery('.bell-link--active').attr("title","Доска объявлений").on('click', function(event) {
 			jQuery(this).parent().siblings('.bell-sx-info').toggleClass('bell-open');
 			return false;
 		}); 
@@ -319,7 +319,7 @@ function testimonial_home_two(){
 
 function about_home(){
 	jQuery('.about-home').owlCarousel({
-		loop:true,
+		loop:false,
 		autoplay:true,
 		margin:30,
 		lazyLoad:true,
@@ -992,3 +992,6 @@ function Get_in_touch(){
 
 
 })(jQuery);
+
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
