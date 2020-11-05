@@ -9257,6 +9257,14 @@ padding:7px 0px;
 	-o-transition: all 0.2s linear;
 	transition: all 0.2s linear;	
 }
+@media (min-width: 992px) {
+	line-height: 18px;
+}
+@media (max-width: 575.98px) {
+	.header-nav .nav>li>a, .header-nav .nav>li .sub-menu li a {
+		font-size: 16px;
+	}
+}
 
 .header-nav .nav>li .sub-menu li a:hover {
 	color: #000;
