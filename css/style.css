@@ -5153,9 +5153,9 @@ btn-half {cursor: pointer;	z-index: 0;	display: inline-block;	position: relative
     overflow: hidden;
     min-height: 600px;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 360px) {
 	.pxp-hero {
-		height: calc(var(--vh, 1vh) * 100);
+		height: calc(100vh-60px);
 	}
 }
 .pxp-hero-bg {
