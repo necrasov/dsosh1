@@ -9235,7 +9235,7 @@ padding:7px 0px;
 	padding: 0px;
 	position: absolute;
 	visibility: hidden;
-	width: 220px;
+	width: 280px;
 	z-index: 10;
 }
 
@@ -9248,7 +9248,7 @@ padding:7px 0px;
 	color: #000;
 	display: block;
 	font-size: 14px;
-	padding: 14px 20px;
+	padding: 8px 20px;
 	font-weight: 400;
 	border-left:0px solid transparent;	
 	-webkit-transition: all 0.2s linear;
@@ -9288,7 +9288,7 @@ padding:7px 0px;
 	float: right;
 	position: absolute;
 	right: 10px;
-	top: 6px;
+	top: 0;
 }
 
 .nav-dark.header-nav .nav>li .sub-menu li .fa {
@@ -9300,7 +9300,7 @@ padding:7px 0px;
 }
 
 .header-nav .nav>li .sub-menu li>.sub-menu {
-	left: 220px;
+	left: 280px;
 	top: 0px;
 	margin: 0 0 0 20px;
 	-webkit-transition: all 0.3s ease;
@@ -9311,7 +9311,7 @@ padding:7px 0px;
 }
 
 .header-nav .nav>li .sub-menu li:hover>.sub-menu {
-	left: 220px;
+	left: 280px;
 	margin: 0px;
 	opacity: 1;
 	top: -1px;
