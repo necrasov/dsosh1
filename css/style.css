@@ -5153,6 +5153,11 @@ btn-half {cursor: pointer;	z-index: 0;	display: inline-block;	position: relative
     overflow: hidden;
     min-height: 600px;
 }
+@media (max-width: 575.98px) {
+	.pxp-hero {
+		height: calc(var(--vh, 1vh) * 100;
+	}
+}
 .pxp-hero-bg {
     position: absolute;
     top: 0;
@@ -12339,11 +12344,11 @@ display:block;
     -o-border-radius: 50%;
     border-radius: 50%;
 	
-    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, .3);
-    -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, .3);
-    -ms-box-shadow: 0 0 0 0 rgba(255, 255, 255, .3);
-    -o-box-shadow: 0 0 0 0 rgba(255, 255, 255, .3);
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, .3);
+    -webkit-box-shadow: 0 0 0 0 rgba(58, 115, 45, .3);
+    -moz-box-shadow: 0 0 0 0 rgba(58, 115, 45, .3);
+    -ms-box-shadow: 0 0 0 0 rgba(58, 115, 45, .3);
+    -o-box-shadow: 0 0 0 0 rgba(58, 115, 45, .3);
+    box-shadow: 0 0 0 0 rgba(58, 115, 45, .3);
 	
     -webkit-animation: ripple 3s infinite;
     -moz-animation: ripple 3s infinite;
@@ -12375,13 +12380,13 @@ display:block;
 }
 
 @-webkit-keyframes ripple {
-    70% {box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);}
-    100% {box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);}
+    70% {box-shadow: 0 0 0 20px rgba(58, 115, 45, 0);}
+    100% {box-shadow: 0 0 0 0 rgba(58, 115, 45, 0);}
 }
 
 @keyframes ripple {
-    70% {box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);}
-    100% {box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);}
+    70% {box-shadow: 0 0 0 20px rgba(58, 115, 45, 0);}
+    100% {box-shadow: 0 0 0 0 rgba(58, 115, 45, 0);}
 }
 
 .slider-play-icon .play-now{
@@ -12422,6 +12427,23 @@ display:block;
 .bell-icon.play-now .ripple, .bell-icon.play-now .ripple:before, .bell-icon.play-now .ripple:after{
 	width:35px;
 	height:35px;   
+}
+.bell-link .bell-icon.play-now .ripple, .bell-link .bell-icon.play-now .ripple:before, .bell-link .bell-icon.play-now .ripple:after {
+	-webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
+    animation: none;
+}
+.bell-link.bell-link--active .bell-icon.play-now .ripple {
+	-webkit-animation: ripple 3s infinite;
+    -moz-animation: ripple 3s infinite;
+    -ms-animation: ripple 3s infinite;
+    -o-animation: ripple 3s infinite;
+    animation: ripple 3s infinite;
+}
+.bell-link.bell-link--active .bell-icon.play-now .fa-bell-o:before {
+	color: #3a732d;
 }
 .bell-sx-info {
 	display: none;
@@ -13174,7 +13196,7 @@ transition: all 0.5s linear;
 	position:absolute;
 	width:100%;
 	bottom:0px;
-	height: 100vh;
+	height: 100vh;	
 }
 @media only screen and (max-width: 991px) {
 	
@@ -15109,12 +15131,13 @@ color:#fff;
   opacity: 1;
   width: 100%;
 }
-.sx-title-swip:hover:after{
-  max-width: 100%;
-}
+
 @media (min-width: 640px) {
 	.sx-title-swip--icon {
 		display: none;
+	}
+	.sx-title-swip:hover:after{
+		max-width: 100%;
 	}
 }
 @media (max-width: 639.98px) {
