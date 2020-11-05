@@ -12730,14 +12730,14 @@ transition: all 0.5s linear;
 }
 
 .our-team-2:hover .description{
-	left:50%;
+	left:0;
 	top:80%;
 	width: 100%;
 	text-align: center;
     -webkit-transform:translate(-50%,-50%);
 	transform:translate(-50%,-50%);
 	background: #fff;;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px;
     margin: 0 2px;
     border: 1px solid #ebebeb;
     max-width: 220px;
