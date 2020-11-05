@@ -12731,13 +12731,18 @@ transition: all 0.5s linear;
 
 .our-team-2:hover .descripton{
 	left:50%;
-	top:50%;
+	top:80%;
 	width: 100%;
 	text-align: center;
     -webkit-transform:translate(-50%,-50%);
 	transform:translate(-50%,-50%);
+	background: #fff;;
+    padding: 5px 10px 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #ebebeb;
+    max-width: 220px;
 }
-.our-team-2:hover .descripton a i {
+.our-team-2:hover .descripton {
 	-webkit-animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -12776,7 +12781,7 @@ transition: all 0.5s linear;
 }
 
 
-
+/* 
 .our-team-2 .descripton i {
 	color: #000;
 	display: inline-block;
@@ -12796,7 +12801,7 @@ transition: all 0.5s linear;
 
 .our-team-2 .descripton i a {
   text-decoration: none;
-}
+} */
 @media only screen and (max-width:991px){
 	.our-team-2:hover{margin-top:10px;}
 }
