@@ -664,7 +664,7 @@ function sticky_sidebar(){
 function counter_up(){		
 	jQuery('.counter').counterUp({
 		delay: 10,
-		time: 5000
+		time: 2000
 	});
 
 }
