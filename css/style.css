@@ -12758,13 +12758,10 @@ transition: all 0.5s linear;
 	text-align: center;
     -webkit-transform:translate(-50%,-50%);
 	transform:translate(-50%,-50%);
-	background: #fff;;
+	background: #ffffff7a;
     padding: 5px 10px;
     margin: 0 20px;
-    border: 1px solid #ebebeb;
     max-width: 220px;
-}
-.our-team-2:hover .description {
 	-webkit-animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 			animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
