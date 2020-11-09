@@ -3137,9 +3137,11 @@ ol.list-num-count.list-outline-none > li:before {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    min-height: 150px;
+}
+.contact-info .icon-content {
     min-height: 70px;
 }
-
 .sx-text {
     flex: 1 1 auto;
 }
