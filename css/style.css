@@ -196,7 +196,7 @@ Version: 1.0
 		
 	|____Carousels 
 	|____Client carousel 1
-	
+	|____Circle Menu
 	|____Testimonials 
 	-------------------------------------
 		|____testimonial with background image
@@ -3137,7 +3137,7 @@ ol.list-num-count.list-outline-none > li:before {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    min-height: 150px;
+    min-height: 70px;
 }
 
 .sx-text {
@@ -4510,7 +4510,7 @@ btn-half {
 
 .sx-separator-outer.separator-left .sep-line-one {
     padding: 20px 60px 20px 20px;
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 800;
 }
 
@@ -5819,6 +5819,142 @@ btn-half {
     width: 50% !important;
 }
 
+/*-------------------------------------
+	7. Circle Menu
+-------------------------------------*/
+
+.circle,
+.circle__ring {
+    height: 80px;
+    position: relative;
+    width: 80px;
+}
+
+.circle {
+	margin: 0 0 0 auto;
+	transition: all 0.4s ease-out;
+}
+
+.circle__ring {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    opacity: 0;
+
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+
+    -webkit-transform: scale(0.1) rotate(-270deg);
+    -moz-transform: scale(0.1) rotate(-270deg);
+    -transform: scale(0.1) rotate(-270deg);
+
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+._open.circle {
+	height: 256px;
+    width: 256px;
+}
+._open .circle__ring {
+    opacity: 1;
+    height: 256px;
+    width: 256px;
+    -webkit-transform: scale(1) rotate(0);
+    -moz-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+}
+
+.circle__center {
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border: 2px solid #eef1f2;
+    bottom: 0;
+    color:#777;
+    height: 80px;
+    left: 0;
+    line-height: 80px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 80px;
+    
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+._open .circle__center {
+    border-color: #aaaaaa;
+}
+
+.circle__menuItem {
+    border-radius: 50%;
+    color: #eeeeee;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    position: absolute;
+    text-align: center;
+    width: 40px;
+}
+
+.circle__titleItem, .circle__label {
+	position: absolute;
+    left: -300px;
+    top: 50%;
+    width: 300px;
+    margin-top: -10px;
+    padding: 0 10px 0 0;
+	text-align: right;	
+}
+.circle__titleItem {
+	text-decoration: underline;
+	-webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	visibility: hidden;
+	opacity: 0;
+}
+._open .circle__titleItem {
+	visibility: visible;
+	opacity: 1;
+}
+.circle__label {
+	font-size: 16px;
+    font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+._open .circle__label {
+	display: none;
+}
+@media (max-width: 575.98px) {
+	.circle {
+		margin: 0 auto 80px auto;
+	}
+	.circle__titleItem, .circle__label {
+		position: static;
+		width: 100%;
+		padding: 10px;
+		text-align: center;	
+	}
+	.circle__titleItem {
+		display: inline-block;
+	}
+	.circle__label {
+		display: block;
+	}
+	.circle__label._clicked {
+		position: absolute;
+		left: 0;
+		top: 102px;
+	}
+}
 /*-------------------------------------
 	7. Testimonials 
 -------------------------------------*/
