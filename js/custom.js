@@ -989,6 +989,29 @@ function Get_in_touch(){
 /*===========================
 	Document on  Submit FUNCTION END
 ===========================*/
+let items = document.querySelectorAll('.circle__menuItem');
 
+for(let i = 0, l = items.length; i < l; i++) {
+	items[i].style.left = (50 - 35*Math.cos(-0.5 * Math.PI - 2*(1/l)*i*Math.PI)).toFixed(4) + "%";
 
+	items[i].style.top = (50 + 35*Math.sin(-0.5 * Math.PI - 2*(1/l)*i*Math.PI)).toFixed(4) + "%";
+}
+let circleBtn = document.querySelector('.circle__center');
+let circleLabel = document.querySelector('.circle__label');
+if (circleBtn) {
+	circleBtn.addEventListener("click", function (e) {
+		e.preventDefault();
+		document.querySelector('.circle').classList.toggle('_open');
+		if (!circleLabel.classList.contains('_clicked')) {
+			circleLabel.classList.add('_clicked');
+		}		
+	});
+}
+
+jQuery('.circle__menuItem').on('click',function(e) {   
+	e.preventDefault();
+	let titleItem = jQuery(this).attr('title');
+	let linkItem = jQuery(this).attr('href');
+	jQuery('.circle__titleItem').attr('href', linkItem).text(titleItem);
+});
 })(jQuery);
