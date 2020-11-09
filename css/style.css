@@ -5029,10 +5029,26 @@ btn-half {
     font-family: 'FontAwesome';
     content: "";
 }
+.sidebar-menu.acod-head.acc-actives .indicator .fa:before, 
+.sidebar-menu.acod-head [aria-expanded="false"] .indicator .fa:before {
+    content: "\f105";
+    font-family: 'FontAwesome';
+}
+
+.sidebar-menu.acod-head.acc-actives .indicator .fa:before, 
+.sidebar-menu.acod-head [aria-expanded="true"] .indicator .fa:before {
+    font-family: 'FontAwesome';
+    content: "\f107";
+}
 
 .acod-head .collapsed .indicator .fa:before,
 .acod-head .collapsed [aria-expanded="false"] .indicator .fa:before {
     content: "\f067";
+    font-family: 'FontAwesome';
+}
+.sidebar-menu.acod-head .collapsed .indicator .fa:before, 
+.sidebar-menu.acod-head .collapsed [aria-expanded="false"] .indicator .fa:before {
+    content: "\f105";
     font-family: 'FontAwesome';
 }
 
@@ -5041,8 +5057,18 @@ btn-half {
     font-family: 'FontAwesome';
     content: "";
 }
-
-/* Accordion defult */
+.sidebar-menu.acod-head .indicator .fa:before, 
+.sidebar-menu.acod-head [aria-expanded="true"] .indicator .fa:before {
+    font-family: 'FontAwesome';
+    content: "\f107";
+}
+.widget_services .sidebar-menu li {
+	padding: 0;
+}
+.sidebar-menu li a {
+	padding: 15px 50px 15px 15px;
+}
+/* Accordion default */
 
 .acc-default .acod-title a {
     padding: 5px 30px 5px 20px;
@@ -5166,6 +5192,21 @@ btn-half {
     color: #fff;
 }
 
+.sidebar-menu > li > ul {
+	background: #d4d4d4;
+	font-size: 14px;
+}
+.sidebar-menu > li ul a {
+	font-size: 14px;
+}
+.sidebar-menu > li > ul > li > ul {
+	background: #c1c1c1;
+}
+.sidebar-menu li ul li a:hover {
+    background: #d7b39a;
+	color: #fff;
+	padding-left: 10px;
+}
 /*-------------------------------------
 	Carousels
 -------------------------------------*/
@@ -8878,7 +8919,8 @@ HEADER (top part of page)
 .e-p-bx li span {
     text-transform: uppercase;
     display: inline-block;
-    padding-right: 10px;
+	padding-right: 10px;
+	font-size: 14px;
     font-weight: 600;
 }
 
@@ -12571,11 +12613,11 @@ Background Effects
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    -webkit-box-shadow: 0 0 0 0 rgba(58, 115, 45, 0.3);
-    -moz-box-shadow: 0 0 0 0 rgba(58, 115, 45, 0.3);
-    -ms-box-shadow: 0 0 0 0 rgba(58, 115, 45, 0.3);
-    -o-box-shadow: 0 0 0 0 rgba(58, 115, 45, 0.3);
-    box-shadow: 0 0 0 0 rgba(58, 115, 45, 0.3);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+    -ms-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+    -o-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
     -webkit-animation: ripple 3s infinite;
     -moz-animation: ripple 3s infinite;
     -ms-animation: ripple 3s infinite;
@@ -12670,6 +12712,11 @@ Background Effects
 }
 
 .bell-link .bell-icon.play-now .ripple, .bell-link .bell-icon.play-now .ripple:before, .bell-link .bell-icon.play-now .ripple:after {
+	-webkit-box-shadow: 0 0 0 0 rgba(58, 115, 45, 0.3);
+    -moz-box-shadow: 0 0 0 0 rgba(58, 115, 45, 0.3);
+    -ms-box-shadow: 0 0 0 0 rgba(58, 115, 45, 0.3);
+    -o-box-shadow: 0 0 0 0 rgba(58, 115, 45, 0.3);
+	box-shadow: 0 0 0 0 rgba(58, 115, 45, 0.3);
     -webkit-animation: none;
     -moz-animation: none;
     -ms-animation: none;
@@ -16493,7 +16540,7 @@ large-title-block
     height: 100%;
 }
 
-.vi-icon svg {
+.get-in-touch-btn svg {
     width: 1.125em;
     height: 1em;
     font-size: 2em;
