@@ -8131,7 +8131,15 @@ blockquote.author-quote .fa-quote-left {
     position: relative;
     margin-bottom: 30px;
 }
-
+.home-blog .blog-post {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
 .sx-post-meta {
     margin-bottom: 10px;
 }
@@ -8637,7 +8645,6 @@ ol.comment-list li.comment .comment-respond .comment-form p {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    min-height: 350px;
 }
 
 .date-style-3 .sx-post-info .sx-post-meta,
