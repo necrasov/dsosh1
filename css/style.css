@@ -8645,6 +8645,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    height: 100%;
 }
 
 .date-style-3 .sx-post-info .sx-post-meta,
