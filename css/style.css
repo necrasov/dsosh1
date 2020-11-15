@@ -3137,7 +3137,9 @@ ol.list-num-count.list-outline-none > li:before {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    min-height: 150px;
+}
+.icon-count-2-outer .icon-content {
+    min-height: 200px;
 }
 .contact-info .icon-content {
     min-height: 70px;
@@ -13844,11 +13846,13 @@ Background Effects
     transition: all 0.5s linear;
     overflow: hidden;
     padding: 5px 0px;
+    height: 100%;
 }
 
 .icon-count-2-outer .icon-count-2 {
     padding: 100px 30px 30px 30px;
     margin: 0px 5px;
+    height: 100%;
 }
 
 .icon-count-2-outer:after {
