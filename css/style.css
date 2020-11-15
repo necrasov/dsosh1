@@ -3360,6 +3360,9 @@ ol.list-num-count.list-outline-none > li:before {
 .yt-thum-box {
     max-height: 270px;
 }
+.home-blog .yt-thum-box {
+    max-height: 400px;
+}
 
 /*____IMAGES OVERLAY EFFECTS (overly animation on images)  
 ======================================*/
@@ -8140,6 +8143,12 @@ blockquote.author-quote .fa-quote-left {
     -ms-flex-direction: column;
     flex-direction: column;
 }
+.home-blog .blog-post img {
+    height: 400px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
 .sx-post-meta {
     margin-bottom: 10px;
 }
@@ -12703,7 +12712,9 @@ Background Effects
     transform: translateX(-50%) translateY(-50%);
     transform-origin: center center;
 }
-
+.home-blog .play-now {
+    top: 33%;
+}
 .play-now .icon {
     position: absolute;
     left: 50%;
