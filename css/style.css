@@ -14334,6 +14334,7 @@ Background Effects
     padding: 30px;
     margin-bottom: 30px;
     border: 20px solid #e8d7cb;
+    min-height: 622px;
 }
 
 @media (max-width: 360px) {
@@ -14382,8 +14383,9 @@ Background Effects
 }
 
 .about-home {
-    max-width: 369px;
+    max-width: 442px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .about-home img {
